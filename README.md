@@ -3,6 +3,7 @@ RoundedLetterView
 
 RoundedLetterView like the one in Android 5.0 Contacts app
 
+![RoundedLetterView](/Screenshots/device-2014-11-13-191000.png)
 
 Attributes to choose from:
 
