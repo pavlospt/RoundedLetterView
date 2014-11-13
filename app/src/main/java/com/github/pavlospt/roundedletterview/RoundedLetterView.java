@@ -1,4 +1,4 @@
-package gr.vanderbox.roundedletterview;
+package com.github.pavlospt.roundedletterview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,6 +10,8 @@ import android.graphics.Typeface;
 import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.View;
+
+import gr.vanderbox.roundedletterview.R;
 
 public class RoundedLetterView extends View {
 
