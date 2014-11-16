@@ -32,9 +32,6 @@ How To Use
 
 ``compile 'com.github.pavlospt:roundedletterview:1.0'``
 
-It will be up in about 2 hours from now (14:35 GMT+2)!
-
-
 Credits
 =======
 Author : Pavlos-Petros Tournaris (p.tournaris@gmail.com)
