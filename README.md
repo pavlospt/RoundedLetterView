@@ -30,7 +30,9 @@ Example
 How To Use
 ==========
 
-For the moment grab the RoundedLetterView.java and the .xml file from values folder and use them manually. Please be patient till i upload it to Maven :) 
+``compile 'com.github.pavlospt:roundedletterview:1.0'``
+
+It will be up in about 2 hours from now (14:35 GMT+2)!
 
 
 Credits
