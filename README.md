@@ -17,7 +17,7 @@ Attributes to choose from:
 Example
 =======
 ```xml
- <gr.vanderbox.roundedletterview.RoundedLetterView
+ <com.github.pavlospt.roundedletterview.RoundedLetterView
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/rlv_name_view"
         android:layout_width="56dp"
