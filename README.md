@@ -33,6 +33,7 @@ What's new
 ==========
 
 v1.0: Initial Commit
+
 v1.1: Ability to set custom Font on the Text using a Typeface object.
 
 Migrating from 1.0 to 1.1
