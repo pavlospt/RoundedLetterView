@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="gr.vanderbox.roundedletterview_sampleapp.RecyclerActivity"
+            android:label="@string/title_activity_recycler" >
+        </activity>
     </application>
 
 </manifest>

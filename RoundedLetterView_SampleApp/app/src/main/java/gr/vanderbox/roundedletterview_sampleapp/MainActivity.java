@@ -1,7 +1,9 @@
 package gr.vanderbox.roundedletterview_sampleapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -27,6 +29,13 @@ public class MainActivity extends Activity {
         this.mListView = (ListView) findViewById(R.id.lv_sample_list);
         this.mAdapter = new SampleAdapter(this,mRandomData);
         this.mListView.setAdapter(mAdapter);
+
+        findViewById(R.id.buttonaki).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,RecyclerActivity.class));
+            }
+        });
     }
 
     private void getDummyData(){

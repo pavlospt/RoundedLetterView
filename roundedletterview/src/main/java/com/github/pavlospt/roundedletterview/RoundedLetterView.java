@@ -11,8 +11,6 @@ import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.View;
 
-import gr.vanderbox.roundedletterview.R;
-
 public class RoundedLetterView extends View {
 
     private static int DEFAULT_TITLE_COLOR = Color.WHITE;
@@ -30,6 +28,8 @@ public class RoundedLetterView extends View {
     private Paint mBackgroundPaint;
     private RectF mInnerRectF;
     private int mViewSize;
+
+    private Typeface mFont = Typeface.defaultFromStyle(Typeface.NORMAL);
 
     public RoundedLetterView(Context context) {
         super(context);
@@ -50,20 +50,20 @@ public class RoundedLetterView extends View {
         final TypedArray a = getContext().obtainStyledAttributes(
                 attrs, R.styleable.RoundedLetterView, defStyle, 0);
 
-        if(a.hasValue(R.styleable.RoundedLetterView_titleText)){
-            mTitleText = a.getString(R.styleable.RoundedLetterView_titleText);
+        if(a.hasValue(R.styleable.RoundedLetterView_rlv_titleText)){
+            mTitleText = a.getString(R.styleable.RoundedLetterView_rlv_titleText);
         }
 
-        mTitleColor = a.getColor(R.styleable.RoundedLetterView_titleColor,DEFAULT_TITLE_COLOR);
-        mBackgroundColor = a.getColor(R.styleable.RoundedLetterView_backgroundColorValue,DEFAULT_BACKGROUND_COLOR);
+        mTitleColor = a.getColor(R.styleable.RoundedLetterView_rlv_titleColor,DEFAULT_TITLE_COLOR);
+        mBackgroundColor = a.getColor(R.styleable.RoundedLetterView_rlv_backgroundColorValue,DEFAULT_BACKGROUND_COLOR);
 
-        mTitleSize = a.getDimension(R.styleable.RoundedLetterView_titleSize,DEFAULT_TITLE_SIZE);
+        mTitleSize = a.getDimension(R.styleable.RoundedLetterView_rlv_titleSize,DEFAULT_TITLE_SIZE);
         a.recycle();
 
         //Title TextPaint
         mTitleTextPaint = new TextPaint();
         mTitleTextPaint.setFlags(Paint.ANTI_ALIAS_FLAG);
-        mTitleTextPaint.setTypeface(Typeface.defaultFromStyle(Typeface.NORMAL));
+        mTitleTextPaint.setTypeface(mFont);
         mTitleTextPaint.setTextAlign(Paint.Align.CENTER);
         mTitleTextPaint.setLinearText(true);
         mTitleTextPaint.setColor(mTitleColor);
@@ -76,10 +76,10 @@ public class RoundedLetterView extends View {
         mBackgroundPaint.setColor(mBackgroundColor);
 
         mInnerRectF = new RectF();
-
     }
 
     private void invalidateTextPaints(){
+        mTitleTextPaint.setTypeface(mFont);
         mTitleTextPaint.setTextSize(mTitleSize);
     }
 
@@ -166,6 +166,15 @@ public class RoundedLetterView extends View {
      */
     public void setTitleSize(float titleSize) {
         mTitleSize = titleSize;
+        invalidateTextPaints();
+    }
+
+    /**
+     * Sets the view's title typeface.
+     * @param font The typeface to be used for the text.
+     */
+    public void setTextTypeface(Typeface font){
+        this.mFont = font;
         invalidateTextPaints();
     }
 }
