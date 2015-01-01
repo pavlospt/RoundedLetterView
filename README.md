@@ -9,10 +9,10 @@ RoundedLetterView like the one in Android 5.0 Contacts app
 
 Attributes to choose from:
 
-* `titleText` - The text in the first row.
-* `titleSize` - The size of the first row text.
-* `titleColor` - The color of the first row text.
-* `backgroundColorValue` - the color between the circle and the stroke.
+* `rlv_titleText` - The text in the first row.
+* `rlv_titleSize` - The size of the first row text.
+* `rlv_titleColor` - The color of the first row text.
+* `rlv_backgroundColorValue` - the color between the circle and the stroke.
     
 Example
 =======
@@ -34,7 +34,7 @@ What's new
 
 v1.0: Initial Commit
 
-v1.1: Ability to set custom Font on the Text using a Typeface object.
+v1.1: Ability to set custom Font on the Text using a Typeface object. **setTypeface(font: Typeface)**
 
 Migrating from 1.0 to 1.1
 =========================
