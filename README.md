@@ -23,11 +23,17 @@ Example
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:layout_marginStart="15dp"
-        app:backgroundColorValue="@color/green"
-        app:titleColor="@android:color/white"
-        app:titleSize="35dp"
-        app:titleText="A" />
+        app:backgroundColorValue="@color/green" (rlv_backgroundColor in v1.1)
+        app:titleColor="@android:color/white" (rlv_titleColor in v1.1)
+        app:titleSize="35dp" (rlv_titleSize in v1.1)
+        app:titleText="A" /> (rlv_titleText in v1.1)
 ```
+
+What's new
+==========
+
+v1.0: Initial Commit
+v1.1: Ability to set custom Font on the Text using a Typeface object.
 
 Migrating from 1.0 to 1.1
 =========================
