@@ -29,10 +29,15 @@ Example
         app:titleText="A" />
 ```
 
+Migrating from 1.0 to 1.1
+=========================
+
+If you are using version **1.1** you have to add the prefix `rlv_` before each attribute. 
+
 How To Use
 ==========
 
-``compile 'com.github.pavlospt:roundedletterview:1.0'``
+``compile 'com.github.pavlospt:roundedletterview:1.1'``
 
 Credits
 =======
