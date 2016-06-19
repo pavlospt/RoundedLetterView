@@ -3,6 +3,8 @@ RoundedLetterView
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-RoundedLetterView-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/1135)
 
+[ ![Download](https://api.bintray.com/packages/pavlospt/android-libraries/RoundedLetterView/images/download.svg) ](https://bintray.com/pavlospt/android-libraries/RoundedLetterView/_latestVersion)
+
 RoundedLetterView like the one in Android 5.0 Contacts app
 
 ![RoundedLetterView](/Screenshots/device-2014-11-13-191000.png)
