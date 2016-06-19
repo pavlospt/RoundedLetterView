@@ -1,16 +1,25 @@
 apply plugin: 'com.android.library'
 
+ext {
+    PUBLISH_GROUP_ID = 'com.github.pavlospt'
+    PUBLISH_ARTIFACT_ID = 'roundedletterview'
+    PUBLISH_VERSION = '1.2'
+}
+
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 23
+    buildToolsVersion "24"
 
     defaultConfig {
-        minSdkVersion 18
-        targetSdkVersion 21
-        versionCode 2
-        versionName "1.1"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 3
+        versionName "1.2"
     }
 }
 
-apply from: '../gradle-mvn-push.gradle'
+apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
+
+//Bintray Push
+//apply from: 'https://raw.githubusercontent.com/ArthurHub/release-android-library/master/android-release-aar.gradle'
 
