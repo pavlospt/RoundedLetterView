@@ -46,7 +46,7 @@ If you are using version **1.1** you have to add the prefix `rlv_` before each a
 How To Use
 ==========
 
-``compile 'com.github.pavlospt:roundedletterview:1.1'``
+``compile 'com.github.pavlospt:roundedletterview:1.2'``
 
 Credits
 =======
