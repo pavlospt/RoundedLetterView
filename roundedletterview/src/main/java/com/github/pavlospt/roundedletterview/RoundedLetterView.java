@@ -81,6 +81,7 @@ public class RoundedLetterView extends View {
     private void invalidateTextPaints(){
         mTitleTextPaint.setTypeface(mFont);
         mTitleTextPaint.setTextSize(mTitleSize);
+        mTitleTextPaint.setColor(mTitleColor);
     }
 
     private void invalidatePaints(){
@@ -175,6 +176,15 @@ public class RoundedLetterView extends View {
      */
     public void setTextTypeface(Typeface font){
         this.mFont = font;
+        invalidateTextPaints();
+    }
+
+    /**
+     * Sets the view's title color attribute value.
+     * @param titleColor The title color attribute value to use.
+     */
+    public void setTitleColor(int titleColor) {
+        mTitleColor = titleColor;
         invalidateTextPaints();
     }
 }
