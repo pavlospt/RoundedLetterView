@@ -25,7 +25,7 @@ Example
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:layout_marginStart="15dp"
-        app:backgroundColorValue="@color/green" (rlv_backgroundColor in v1.1)
+        app:backgroundColorValue="@color/green" (rlv_backgroundColorValue in v1.1)
         app:titleColor="@android:color/white" (rlv_titleColor in v1.1)
         app:titleSize="35dp" (rlv_titleSize in v1.1)
         app:titleText="A" /> (rlv_titleText in v1.1)
