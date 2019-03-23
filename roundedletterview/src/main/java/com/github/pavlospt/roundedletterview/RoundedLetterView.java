@@ -82,10 +82,12 @@ public class RoundedLetterView extends View {
         mTitleTextPaint.setTypeface(mFont);
         mTitleTextPaint.setTextSize(mTitleSize);
         mTitleTextPaint.setColor(mTitleColor);
+        invalidate();
     }
 
     private void invalidatePaints(){
         mBackgroundPaint.setColor(mBackgroundColor);
+        invalidate();
     }
 
     @Override
